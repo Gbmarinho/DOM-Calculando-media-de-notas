@@ -15,13 +15,15 @@ main{
 }
 #container{
     background-color: white;
-    width: 25%;
+    width: 28%;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 #write {
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
+    width: 90%;
 }
 #local-area{
     display: flex;
@@ -29,4 +31,16 @@ main{
 }
 #area{
     width: 90%;
+    height: 190px;
+}
+.space{
+    width: 90%;
+    margin: 15px 15px;
+}
+.spacep{
+    margin: 5px 0 25px 15px;
+}
+.media{
+    display: flex;
+    justify-content: left;
 }
