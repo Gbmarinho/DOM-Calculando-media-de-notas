@@ -1,6 +1,3 @@
-// function print(){
-//     console.log('Gabriel')
-// }
 var notas = []
 var somaNotas = 0
 var soma = 0
@@ -9,10 +6,19 @@ const textarea = document.querySelector("#area")
 const input = document.querySelector(".nota")
 const resultado = document.querySelector("#resultado")
 btn.addEventListener("click", () => {
-    notas.push(input.value)
-    soma = soma + 1
-    textarea.value = `${textarea.value}\nA nota ${soma} foi: ${input.value}`
-    input.value = ""
+    var confirm = 0     
+    confirm = parseFloat(input.value.replace(',', '.'))     
+    console.log(confirm)
+    if((0 <= confirm)&&(confirm<=10)){             
+        notas.push(input.value) 
+        soma = soma + 1        
+        console.log(notas)         
+        textarea.value = `${textarea.value}A nota ${soma} foi: ${input.value}\n`      
+        input.value = ""           
+    }
+    else {
+        alert("Por favor, digite uma nota valida!!!")     
+    }
 })
 
 const btn2 = document.querySelector("#btn2")

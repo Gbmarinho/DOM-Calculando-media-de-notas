@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; }
 body {
-	background-color: #642764;
+	background-color: #412277;
 }
 header{
     color: white;
@@ -16,6 +16,7 @@ main{
 #container{
     background-color: white;
     width: 28%;
+    min-width: 340px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
