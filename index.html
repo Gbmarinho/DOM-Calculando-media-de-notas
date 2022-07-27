@@ -12,11 +12,15 @@
         <h1>Media das Notas dos Alunos</h1>
     </header>
     <main>
-        <div>
-            <p>Nota:</p>
-            <input type="text">
-            <button type="submit" onclick="print()">Adicionar</button>
-            <textarea disabled></textarea>
+        <div id="container">
+            <div id="write">
+                <p>Nota:</p>
+                <input type="text">
+                <button type="submit" onclick="print()">Adicionar</button>
+            </div>
+            <div id="local-area">
+                <textarea disabled id="area"></textarea>
+            </div>
             <button type="submit">Calcular Média</button>
             <p>A média é:</p>
         </div>
