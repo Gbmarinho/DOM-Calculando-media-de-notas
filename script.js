@@ -14,9 +14,12 @@ btn.addEventListener("click", () => {
         soma = soma + 1                
         textarea.value = `${textarea.value}A nota ${soma} foi: ${input.value}\n`      
         input.value = ""           
-    }
-    else {
-        alert("Por favor insire uma nota!!!")     
+    }else if(input.value == ""){
+        alert("Por favor insire uma nota!") 
+    }else if(h == true){
+        alert("A nota digitada é inválida, por favor, insira uma nota válida.") 
+    } else{
+        alert("A nota digitada é inválida, por favor, insira uma nota válida")     
     }
 })
 
